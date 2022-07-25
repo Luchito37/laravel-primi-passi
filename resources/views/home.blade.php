@@ -1,9 +1,3 @@
-@php
-    $title = [
-        'firstword' => 'HELLO',
-        'lastword' => 'WORLD'
-    ]
-@endphp
 
 
 
@@ -58,7 +52,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    {{$title['firstword'] . " " . $title['lastword']}}
+                    {{$titolo['firstword'] . " " . $titolo['lastword']}}
                 </div>
 
             </div>

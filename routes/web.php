@@ -14,5 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $title = [
+        'firstword' => 'HELLO',
+        'lastword' => 'WORLD'
+    ];
+
+    return view('home', [
+        'titolo' => $title
+    ]);
 });
