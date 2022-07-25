@@ -44,6 +44,23 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            .styleList{
+                justify-content: space-around;
+                display: flex;
+                font-size: 30px;
+                list-style-type: none;
+            }
+
+            .styleLinkHome{
+                color: orange;
+                cursor: grabbing;
+                text-decoration: none;
+            }
+
+            .paragraphSize{
+                font-size: 50px;
+            }
         </style>
     </head>
     <body>
@@ -52,7 +69,18 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    {{$titolo['firstword'] . " " . $titolo['lastword']}}
+                    <h2>{{$titolo['firstword'] . " " . $titolo['lastword']}}</h2>
+                    <p class="flex-center paragraphSize">This is your Homepage !!</p>
+                    <p class="flex-center paragraphSize"> Now choose a link for navigate on the website :</p>
+                </div>
+                <div>
+                    <ul class="styleList">
+                        @foreach ($homeLinks as $link)
+                            <li>
+                                <a class="styleLinkHome" href="#">{{$link['link']}}</a>
+                            </li>
+                        @endforeach
+                    </ul>
                 </div>
 
             </div>

@@ -18,8 +18,21 @@ Route::get('/', function () {
         'firstword' => 'HELLO',
         'lastword' => 'WORLD'
     ];
+    $links = [
+        [
+            'link'=> 'Chi siamo ?'
+        ],
+        [
+            'link'=> 'I nostri lavori'
+        ],
+        [
+            'link'=> 'Florian è un eroe?'
+        ]
+        ];
 
     return view('home', [
-        'titolo' => $title
+        'titolo' => $title,
+        'homeLinks' => $links
+
     ]);
 });
