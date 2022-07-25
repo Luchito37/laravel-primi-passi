@@ -18,31 +18,16 @@
                 background-color: #fff;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
             }
 
             .flex-center {
                 align-items: center;
                 display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
+                flex-direction: column
             }
 
             .title {
-                font-size: 84px;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
+                font-size: 60px;
             }
 
             .styleList{
@@ -64,11 +49,11 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div class="flex-center">
             
 
-            <div class="content">
-                <div class="title m-b-md">
+            <div>
+                <div class="title m-b-md flex-center">
                     <h2>{{$titolo['firstword'] . " " . $titolo['lastword']}}</h2>
                     <p class="flex-center paragraphSize">This is your Homepage !!</p>
                     <p class="flex-center paragraphSize"> Now choose a link for navigate on the website :</p>
