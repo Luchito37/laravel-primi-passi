@@ -18,21 +18,21 @@ Route::get('/', function () {
         'firstword' => 'HELLO',
         'lastword' => 'WORLD'
     ];
-    $links = [
-        [
-            'link'=> 'Chi siamo ?'
-        ],
-        [
-            'link'=> 'I nostri lavori'
-        ],
-        [
-            'link'=> 'Florian è un eroe?'
-        ]
-        ];
 
     return view('home', [
         'titolo' => $title,
-        'homeLinks' => $links
 
     ]);
-});
+})->name("home");
+
+Route::get('/chi-siamo', function () {
+    $title = [
+        'firstword' => 'CHI ',
+        'lastword' => ' SIAMO ?'
+    ];
+
+    return view('chi-siamo', [
+        'titolo' => $title,
+
+    ]);
+})->name("about_us");

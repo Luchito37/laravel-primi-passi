@@ -1,13 +1,10 @@
-
-
-
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>HELLO WORLD</title>
+        <title>CHI SIAMO</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
@@ -55,20 +52,20 @@
             <div>
                 <div class="title m-b-md flex-center">
                     <h2>{{$titolo['firstword'] . " " . $titolo['lastword']}}</h2>
-                    <p class="flex-center paragraphSize">This is your Homepage !!</p>
-                    <p class="flex-center paragraphSize"> Now choose a link for navigate on the website :</p>
+                    <p class="flex-center paragraphSize">We are the native of America</p>
+                    <p class="flex-center paragraphSize"> Now follow us for make America great Again!</p>
                 </div>
                 <div>
                     <ul class="styleList">
-                        <li>
-                            <a class="styleLinkHome" href="{{ route("home") }}">Home</a>
-                        </li>
-                        <li>
-                            <a class="styleLinkHome" href="{{ route("about_us") }}">Chi Siamo ?</a>
-                        </li>
-                        <li>
-                            <a class="styleLinkHome" href="#">Florian è un Eroe</a>
-                        </li>
+                            <li>
+                                <a class="styleLinkHome" href="{{ route("home")}}">Home</a>
+                            </li>
+                            <li>
+                                <a class="styleLinkHome" href="{{ route("about_us")}}">Chi Siamo ?</a>
+                            </li>
+                            <li>
+                                <a class="styleLinkHome" href="#">Florian è un Eroe</a>
+                            </li>
                     </ul>
                 </div>
 
